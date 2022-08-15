@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroAntdModule } from './ng-zorro-antd.module';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { AppOverlayContainer } from './overlay';
 
 registerLocaleData(en);
 
@@ -26,7 +28,9 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US },
+  { provide: OverlayContainer, useClass: AppOverlayContainer },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

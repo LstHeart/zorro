@@ -10,6 +10,7 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgZorroAntdModule } from './ng-zorro-antd.module';
 
 registerLocaleData(en);
 
@@ -20,6 +21,7 @@ registerLocaleData(en);
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule

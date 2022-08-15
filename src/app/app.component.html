@@ -1,4 +1,38 @@
 <!-- NG-ZORRO -->
-<a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a>
+<div class="demo">
+
+  <form nz-form nzLayout="inline">
+    <nz-form-item class="maintain-item">
+      <nz-form-label  nzFor="plant">Plant</nz-form-label>
+      <nz-form-control class="maintain-select">
+        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person" [(ngModel)]="selectedValue">
+          <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+          <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+          <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+          <nz-option nzLabel="Tom1" nzValue="tom1"></nz-option>
+          <nz-option nzLabel="Tom2" nzValue="tom2"></nz-option>
+          <nz-option nzLabel="Tom3" nzValue="tom3"></nz-option>
+          <nz-option nzLabel="Tom4" nzValue="tom4"></nz-option>
+          <nz-option nzLabel="Tom5" nzValue="tom5"></nz-option>
+          <nz-option nzLabel="Tom6" nzValue="tom6"></nz-option>
+          <nz-option nzLabel="Tom7" nzValue="tom7"></nz-option>
+        </nz-select>
+      </nz-form-control>
+
+    </nz-form-item>
+    <nz-form-item class="maintain-button">
+      <nz-form-control>
+        <button data-cy="button-query" nz-button nzType="primary">
+          <i nz-icon nzType="search"></i>
+          Query
+        </button>
+        <button data-cy="button-add" nz-button nzType="primary" >
+          <i nz-icon nzType="folder-add"></i>
+          New Group
+        </button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+
+</div>
+<div id="zorro-root"></div>
